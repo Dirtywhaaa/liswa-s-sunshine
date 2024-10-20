@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoliswa's Sunshine</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        :root {
+            --primary-color: #FF69B4;
+            --secondary-color: #FFD700;
+            --background-color: #FFF0F5;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            border-radius: 0 0 50% 50% / 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--secondary-color);
+            margin-top: 20px;
+        }
+
+        .section {
+            background-color: white;
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        li::before {
+            content: '✨';
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50% 50% 0 0 / 20px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            .profile-pic {
+                width: 150px;
+                height: 150px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Yoliswa's Sunshine</h1>
+        <p>the beauty, brains, and kindness of an extraordinary girl valued by many </p>
+        <img src="profilepic.jpg"alt="Yoliswa" class="profile-pic">
+    </header>
+
+    <div class="container">
+        <section class="section" id="about">
+            <h2>About Yoliswa</h2>
+            <p>yoliswa is a astonishing 16 year old with a heart warmer than a cup of cuppucino in your average winter mornings, she's a bit more or less ambivert but loves her personal space and everything else in between. Aesthetic & caring.</p>
+        </section>
+
+        <section class="section" id="interests">
+            <h2>Interests & Hobbies</h2>
+            <ul>
+                <li>cooking exotic dishes from around the country from different cultures (kadlala she only knows how to fry eggs. )</li>
+                <li>leari new languages and exploring different cultures</li>
+                <li>readingbooks that spark her imagination</li>
+                <li>enjoying quiet spaces for reflection and relaxation</li>
+                <li>solving challenging puzzles and brain teasers</li>
+            </ul>
+        </section>
+        <section class="section" id="skills">
+         ,  <h2>Skills & Talents</h2>
+            <ul>
+                <li>fluent in English, Siswati, and Afrikaans</li>
+                <li>excellent cook and baker, creating delicious meals and treats</li>
+                <li>quick learner with a brain  for problem-solving</li>
+                <li>natural leader and role model to her peers especially me thou</li>
+                <li>creative thinker with a unique perspective on life</li>
+            </ul>
+        </section>
+
+        <section class="section" id="experiences">
+            <h2>Life Experiences & Lessons</h2>
+            <p>yoliswa's journey has taken her through various schools and communities, enriching her life with diverse experiences. These adventures have taught her valuable lessons:</p>
+            <ul>
+                <li>embracing change and adapting to new environments such as her new school e.t.c</li>
+                <li>respecting and valuing different cultures and perspectives</li>
+                <li>persevering in the face of challenges</li>
+                <li>importance of kindness and empathy towards others</li>
+                <li>confidence in her unique identity and abilities</li>
+            </ul>
+        </section>
+
+        <section class="section" id="personality">
+            <h2>Personality & Values</h2>
+            <p>yoliswa's personality is a vibrant blossomed jasmine of qualities that make her truly special:</p>
+            <ul>
+                <li>confident and self-assured, ready to take on any challenge especially if it's last minute</li>
+                <li>mindful and considerate of others' feelings and perspectives</li>
+                <li>most yet inspiring, serving as a role model to many especially her siblings and classmates</li>
+                <li>non-tolerant of many things and always standing up for what's right </li>
+                <li>valuing honesty, trust, and respect in all her relationships and friendships</li>
+            </ul>
+        </section>
+
+        <section class="section" id="gallery">
+            <h2>Yoliswa's Gallery</h2>
+            <div class="gallery">
+                <img src="gallery1.jpeg" alt="Yoliswa 1">
+                <img src="gallery2.jpeg" alt="Yoliswa 2">
+                <img src="gallery3.jpeg" alt="Yoliswa 3">
+                <img src="gallery4.jpeg" alt="Yoliswa 4">
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Coded with love by Mpho</p>
+    </footer>
+
+    <script>
+        // Add smooth scrolling to all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add a simple animation to section headings
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('h2').forEach(h2 => {
+            h2.style.opacity = 0;
+            h2.style.transform = 'translateY(20px)';
+            h2.style.transition = 'opacity 0.5s, transform 0.5s';
+            observer.observe(h2);
+        });
+    </script>
+</body>
+</html>
